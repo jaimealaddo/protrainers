@@ -112,8 +112,6 @@ function validaUsuario($usuario,$pwd) // SOLO PARA ENTRAR
 	$resultadoSQL = mysqli_query($link, $query) or die(mailError($query, $linea, $origen." - USER: ".$usuario, mysqli_error($link)) . " - " . mysqli_close($link)." - Error ".$linea);
 	mysqli_close($link);
 	$res = mysqli_num_rows($resultadoSQL);
-	//echo var_dump($query);
-	//Resultados q coinciden con el nombre de usuario (0-no existe, 1-encontrado)
 	if ($res != 0){
 		$res = mysqli_fetch_assoc($resultadoSQL);
 		$valida = ($res['idUsuario']);
