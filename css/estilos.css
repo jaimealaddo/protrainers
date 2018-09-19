@@ -1,0 +1,765 @@
+/* CSS Document */
+
+* { /* resetear marjenes por defecto de los navegadores */
+	padding:0;
+	/*margin:0;*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background:#FEFEFE;/* color general */
+	color:#000000;
+} 
+
+
+	
+.menu_bar { /* ocultar el boton de menu en escritorio */
+	display:none;
+	z-index:6100; /* para que este encime de todo */
+}
+
+header { /* estilo del header */
+	width: 100%;
+}
+
+header nav { /* cabecera del menu */
+	background:rgba(52,52,52,0.92);
+	z-index:6000; /* para que este encime de todo */
+	max-width: 1500px; /* ancho maximo */
+	width:85%; 
+	margin:0px auto; /* para que se centre */
+}
+
+header nav ul { /* quitar el estilo de los listados */
+	list-style:none;
+	text-align: center;
+}
+
+header nav ul li { /* color de la lista */
+	display:inline-block;
+	position: relative; /* para que funcionen los submenus */
+	/* width:calc(85% / 6); */
+}
+
+header nav ul li:hover { /* efecto para que cuando pases el mouse */
+	background:rgba(0,0,0,0.80);
+	color:#E79131;
+}
+
+header nav ul li .info { /* elementos li info */
+	
+	color:#989898; /* color de los elementos y texto */
+	display:block;
+	text-decoration:none; /* quitar su decorado */
+	padding: 15px; /* hacerlos mas altos */
+}
+
+
+header nav ul li a { /* elementos li a (vinculos) */
+	color:#fff; /* color de los elementos y texto */
+	display:block;
+	text-decoration:none; /* quitar su decorado */
+	padding: 20px; /* hacerlos mas altos */
+}
+
+header nav ul li a:active { /* elementos li a (vinculos) activos */
+	color:#fff; /* color de los elementos y texto */
+	text-decoration:none; /* quitar su decorado */
+}
+
+header nav ul li a:link { /* elementos li a (vinculos) activos */
+	color:#fff; /* color de los elementos y texto */
+	text-decoration:none; /* quitar su decorado */
+}
+
+header nav ul li a:hoover { /* elementos li a (vinculos) mouse */
+	text-decoration:none; /* quitar su decorado */
+	color:#E79131;
+}
+
+header nav ul li a:visited { /* elementos li a (vinculos) visitados */
+	color:#fff; /* color de los elementos y texto */
+	text-decoration:none; /* quitar su decorado */
+}
+
+header nav ul li a span { /* elementos span dentro de los vinculos ( a ) o sea iconos */
+	margin-right:10px; /* marjen entre icono y texto */
+}
+
+header nav ul li .children {
+	display: none; /* ocultarlas por defecto */
+	background:rgba(20,20,20,0.85); /* color del submenu */
+	position: absolute; /* para que se queden en posicion */
+	width: 150%; /* mas grande que el elemento padre */
+	z-index:1000;
+	text-align: left;
+}
+
+header nav ul li .children li { /* listas de submenu */
+	display:block;
+	overflow: hidden; /* soluciuona float left */
+	border-bottom: 1px solid rgba(255,255,255,0.5); /* con trasparencia del 50% */
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span { /* iconos en submenu */
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:20;
+	margin-left:10px;
+}
+
+header nav ul li .flechita { /* icono para submenu */
+	float: right;
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+.link-disabled {pointer-events:none;}
+
+.navbar .container-fluid .nav{
+	margin-bottom:0px;
+}
+
+.navbar .container-fluid .navbar-header img {
+	
+	position:absolute;
+	margin-top:-15px;
+	margin-left:-15px;
+}
+
+.navbar .container-fluid .navbar-header .titulo {
+	margin-left:42px;
+}
+.navbar .container-fluid .navbar-header a {
+	height:auto;
+}
+.navbar .container-fluid .navbar-nav{
+	background:#F0F0F0;
+}
+hr{
+	margin-top:.5px;
+	margin-bottom:.5px;
+	background-color:#9A9A9A;
+	height: 1px;
+}
+td .textos, th .textos{
+	float:left;
+	vertical-align:middle;
+	display: inline-flex;
+}
+
+
+.form-group .input-group  .seleccionDeAddon{
+	margin:0px;
+	padding:0px;
+	background:#E30003
+}
+
+a:hover
+{
+	text-decoration:none;
+}
+a:active
+{
+	text-decoration:none;
+}
+
+a:visited
+{
+	text-decoration:none;
+}
+a:link
+{
+	text-decoration:none;
+}
+
+
+
+.navbar-brand{
+	height:auto;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+.panel-group .panel .panel-heading .container-fluid{
+	padding-left:0;
+	padding-right:0;
+	margin-bottom:-2;
+}
+
+.panel-group .panel .panel-heading .btn{
+	padding-left:6;
+	padding-right:6;
+	padding-top:6;
+	padding-bottom:6;
+	float:right;
+	margin-bottom:-5;
+	margin-top:-5;
+	margin-right:0
+}
+.divider2 {
+    background-color:rgba(0,0,0,0.50);
+	line-height:1px;
+}
+
+.panel-group .panel .panel-heading .boton{
+	margin-left:20;
+	margin-right:0;
+	float:right;
+	list-style:none;
+}
+.panel-group .panel .panel-heading .boton p{
+	float:left;
+	margin-bottom:0;
+	margin-top:1;
+	margin-right:8;
+}
+.panel-group .panel .panel-heading .conBoton{
+	padding-right:50px;
+}
+
+textarea {
+	resize:vertical;
+}
+
+.cargando{
+	float:left;
+	margin-top: -30px;
+	margin-left:-25px;
+	visibility:hidden;
+}
+
+.cargando img
+{	
+	position:absolute;
+}
+
+.cargandoVisible{
+	float:left;
+	margin-top: -30px;
+	margin-left:-25px;
+	visibility:visible;
+	z-index:7000;
+}
+.cargandoVisible img
+{	
+	position:absolute;
+}
+
+.cargandoCentroVisible{
+	float:left;
+	margin-top: 3px;
+	margin-left:50%;
+	visibility:visible;
+	z-index:7000;
+}
+.cargandoCentroVisible img
+{	
+	position:absolute;
+}
+.deshabilitado{
+	visibility:hidden;
+}
+.habilitado{
+	visibility:visible;
+}
+
+.botonCocina{
+	padding:12px;
+	display:inline-block;
+}
+
+.botonCocinaB{
+	padding:7px;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+	width:34px;
+}
+
+.textoCocina{
+	font-size:17px;
+	text-align:center;
+	margin-top: 8px;
+	display: inline;
+}
+
+.textoCocinaB{
+	position: relative;
+    padding-left: 5px;
+    width: calc(100% - 145px);
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.textoMesero{
+	position: relative;
+    padding-left: 5px;
+    width: calc(100% - 105px);
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.titulosCocina{
+	margin-top: 10px;
+    width: calc(100% - 143px);
+    display: inline-block;
+    padding-left: 12px;
+}
+
+.titulosCaja{
+	margin-top: 0px;
+    width: calc(100% - 67px);
+    display: inline-block;
+    padding-left: 9px;
+}
+
+.listaCocina{
+	min-height: 38px;
+    display: inline-block;
+    overflow: hidden;
+	margin-left: 34px;
+    width: calc(100% - 112px);
+}
+
+.botonesCocinaSola{
+	position: absolute;
+    left: calc(100% - 220px);
+    top: 0px;
+    bottom: 0;
+	display: inline-flex;
+}
+.botonesCocinaMovil{
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	vertical-align: middle;
+	direction: rtl;
+}
+
+.botonActualizar{
+	position: fixed;
+    right: 10%;
+    bottom: 0px;
+    width: 80%;
+	z-index:9000;
+	padding: 0px 5px;
+    font-size: 25px;
+	transition:all;
+	-webkit-transition: all 0.3s; /* Safari */
+    transition: font-size 0.3s;
+}
+.botonActualizar:hover{
+    font-size: 30px;
+	-webkit-transition: all 0.3s; /* Safari */
+    transition: font-size 0.3s;
+}
+
+.botonMeseros{
+	margin-top: -8px;
+    margin-bottom: -7px;
+    margin-right: -13px;
+}
+
+.serviciosMeseros{
+	display: inline-block;
+    width: calc(100% - 28px);
+}
+
+.serviciosMesero{
+	position: fixed;
+    top: -2px;
+    z-index: 7000;
+    right: 7px;
+}
+
+.panelMenu{
+	background:#dcdcdc;
+}
+
+.contenedorMesero{
+	margin-bottom: 200px;
+}
+.cometarioBoton{
+	display: inline-block;
+    width: calc(100% - 115px);
+}
+.cometarioBotonB{
+	display: inline-block;
+    width: calc(100% - 1px);
+}
+.comentarioSocial{
+	display:inline-block; 
+	vertical-align:middle; 
+	margin-left:5px; 
+	min-width:80px; 
+	width:calc(100% - 60px);
+}
+
+input, select
+{
+	min-width: 70px;
+}
+
+.fechaInput{
+	font-size:medium;
+}
+
+
+.mediaIndex{
+	width:150px;		
+}
+.mediaAnuncio{
+	width:300px;
+}
+.datosIndex{
+	display: table-cell;
+}
+.datosAnuncio{
+	display: table-cell;
+	width:auto;
+	max-width: 300px;
+}
+.media .datosIndex h4, .media h4, .media h3
+{
+	padding: 10px;
+	padding-top: 18px;
+}
+.media .anuncio{
+	width:calc(100% - 311px); 
+	display:inline-block; 
+	float:right;
+}
+.fotoAnuncio
+{
+	float: left;
+    padding-top: 18px;
+}
+.restaurantes
+{
+	width: calc(100% - 80px); 
+	min-width: 90px; 
+	display: inline-block;
+}
+.funkyradio {
+  padding-bottom: 15px;
+}
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: .2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked ~ label:before,
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before,
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked ~ label:before,
+.funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.funkyradio-info input[type="radio"]:checked ~ label:before,
+.funkyradio-info input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+.botonFlotante{
+	position:fixed; 
+	top:8px; 
+	right:9px; 
+	z-index:6100
+}
+
+.textos .fotoGal { 
+	height:32px;
+	position: relative;
+	margin: 0 auto;
+	transition: all 0.72s; /* Animation */
+	background-color: white;
+	padding:0px;
+	cursor:pointer;
+}
+
+@media screen and (max-width: 768px) { /* media querys para cel */
+	body { /* agregar un margen para el menu bar */
+		padding-top:50px; 
+	}
+
+	.menu_bar { /* mostrar en tel */
+		display:block; 
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#262626;
+	}
+
+	.menu_bar .bt-menu { /* boton menu */
+		display: block;
+		padding: 5px;
+		color: #fff;
+		overflow: hidden; /* evita pedos del float del icono */
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar .icon-menu { /* icono de la barra menu */
+		float: right;
+		font-size: 40px;
+		line-height: 1;
+	}
+	.menu_bar .texto-menu-bar { /* texto de la barra menu */
+		float: right;
+		margin-right:10px;
+		margin-top:3px;
+	}
+	
+	.menu_bar .logo-bar { /* logo menu */
+		float: left;
+		position:absolute;
+	}
+	
+	header nav { 
+		width: 100%;/* navegacion del menu */
+		height: calc(100% - 50px); /* toda la pantalla sin los 80px que quita la barra del menu */
+		position: fixed;
+		left:0;
+		top:-100%;
+		margin: 0;
+		overflow: scroll; /* para pantallas chicas */
+	}
+	header nav ul { /* quitar el estilo de los listados */
+	text-align: left;
+	}
+
+	header nav ul li { /* listas del menu */
+		display: block; /* para que abarquen el 100% de ancho */
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a { /* para que abarquen el 100% */
+		display: block;
+	}
+
+	header nav ul li:hover .children { /* cuando pase el mouse que no se desplieguen */
+		display: none;
+	}
+
+	header nav ul li .children { /* con los hijos o submenu */
+		width: 100%;
+		position: relative; /* empuja el las listas del menu */
+	}
+
+	header nav ul li .children li a {
+		margin-left:20px; /* marjen para los iconos derechos */
+	}
+
+	header nav ul li .caret {
+		float: right; /* pasar los iconos a la derecha */
+	}
+	
+	.navbar .container-fluid .navbar-header a {
+		margin-bottom:0px;
+	}
+	.navbar .container-fluid .navbar-nav {
+		text-align:left;
+		margin-top:0px;
+	}
+	
+	.navbar .container-fluid .navbar-nav .navbar-text{
+		float:left;
+		/*margin-top:10px;*/
+		margin-left:20px;
+		/*background:#fff;*/
+	}
+	.serviciosMesero{
+		top: 36px;
+		left: 50px;
+		right: 47px;
+	}
+	.contenedorMesero{
+		margin-top: 19px;
+	}
+	.media{
+		text-align: justify;
+	}
+	.mediaAnuncio{
+		width:100%;
+	}
+	.datosAnuncio{
+		display: block;
+		padding-right:0px;
+		max-width: 100%;
+	}
+	.media .anuncio{
+		width:100%; 
+		display:block; 
+		float:none;
+	}
+	.fotoAnuncio
+	{
+		float: none;
+		padding-top: 0px;
+	}
+	.botonFlotante{
+		top:3px; 
+		right:133px; 
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.mediaIndex{
+		width:100%;
+			
+	}
+	.datosIndex{
+		display: block;
+		padding-right:0px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.botonesCocinaMovil{
+		display:inline-block;
+		width: 34px;
+	}
+	.textoCocinaB{
+    width: calc(100% - 99px);
+	}
+	.titulosCocina{
+    width: calc(100% - 82px);
+	}
+	.botonesCocinaSola{
+		position: relative;
+		left: inherit;
+	}
+	.textoMesero{
+		width: calc(100% - 84px);
+	}
+	.cometarioBoton{
+		width: 100%;
+		border: #c8c8c8;
+		border-style: solid;
+		border-width: 1px;
+		padding: 2px;
+	}
+	.cometarioBotonB{
+		width: 100%;
+		border: #c8c8c8;
+		border-style: solid;
+		border-width: 1px;
+		padding: 2px;
+	}
+	.comentarioSocial{ 
+		min-width:80px;
+	}
+	.fechaInput{
+		font-size: smaller;
+	}
+	.restaurantes
+	{
+		width: 100%; 
+	}
+	
+}
