@@ -2,19 +2,19 @@
 function conectarse()
 {
 	$dbhost = "localhost";
-	$dbuser = "cideaaco_credenc";	
-	$dbpwd = "4cc3s0T0t4l";
-	$basedatos = "cideaaco_protrainers";
+	$dbuser = "********";	
+	$dbpwd = "*********";
+	$basedatos = "****************";
 	
 	$conectar = mysqli_connect($dbhost, $dbuser, $dbpwd, $basedatos);
 	if (!$conectar) 
 	{
 		echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
-		echo "errno de depuraci髇: " . mysqli_connect_errno() . PHP_EOL;
-		echo "error de depuraci髇: " . mysqli_connect_error() . PHP_EOL;
+		echo "errno de depuraci贸n: " . mysqli_connect_errno() . PHP_EOL;
+		echo "error de depuraci贸n: " . mysqli_connect_error() . PHP_EOL;
 		exit;
 	}
-	mysqli_query($conectar, "SET NAMES 'utf-8'");//Poner caracteres en la conexi髇 como UTF-8
+	mysqli_query($conectar, "SET NAMES 'utf-8'");//Poner caracteres en la conexi贸n como UTF-8
 	mysqli_query($conectar, "SET time_zone = '-06:00'");
 	mysqli_query($conectar, 'SET @@session.time_zone = "-06:00"');
 	
@@ -58,14 +58,14 @@ function conectarseFast()
 	if(!$conectarB) 
 	{
 		echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
-		echo "<br/>errno de depuraci髇: " . mysqli_connect_errno() . PHP_EOL;
-		echo "<br/>error de depuraci髇: " . mysqli_connect_error() . PHP_EOL;
+		echo "<br/>errno de depuraci贸n: " . mysqli_connect_errno() . PHP_EOL;
+		echo "<br/>error de depuraci贸n: " . mysqli_connect_error() . PHP_EOL;
 		exit;
 	}else{
 		echo "bien CONECTADO - ";
 	}
 	
-	mysqli_query($conectarB, "SET NAMES 'utf-8'");//Poner caracteres en la conexi髇 como UTF-8
+	mysqli_query($conectarB, "SET NAMES 'utf-8'");//Poner caracteres en la conexi贸n como UTF-8
 	mysqli_query($conectarB, "SET time_zone = '-06:00'");
 	mysqli_query($conectarB, 'SET @@session.time_zone = "-06:00"');
 	
